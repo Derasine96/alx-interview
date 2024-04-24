@@ -2,7 +2,9 @@
 """Pascal triangle"""
 
 def pascal_triangle(n):
-    """A function that returns a list of lists of integers representing Pascal’s triangle."""
+    """A function that returns a list of lists of integers
+        representing Pascal’s triangle.
+    """
     if n <= 0:
         return []
     result = [[1]]
