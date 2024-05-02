@@ -3,8 +3,7 @@
 
 
 def canUnlockAll(boxes):
-    """
-    A method that determines if all the boxes can be opened.
+    """A method that determines if all the boxes can be opened.
     Args:
         boxes (list[int]) A list  of integers representing the numbers on the boxes.
     Return:
