@@ -4,12 +4,13 @@
 
 def canUnlockAll(boxes):
     """
-    a method that determines if all the boxes can be opened.
+    A method that determines if all the boxes can be opened.
     Args:
         boxes (list[int]) A list  of integers representing the numbers on the boxes.
-    Return: True or False
+    Return:
+        True or False
     """
-    if not boxes or type(boxes) is not list:
+    if not boxes or not isinstance(boxes, list):
         return False
     unlocked = [0]
     for n in unlocked:
