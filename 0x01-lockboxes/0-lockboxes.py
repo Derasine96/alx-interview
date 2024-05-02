@@ -1,15 +1,13 @@
 #!/usr/bin/python3
-"""A method that determines if all the boxes can be opened."""
+"""a method that determines if all the boxes can be opened."""
 
 
-def can_unlock_all(boxes):
+def canUnlockAll(boxes):
     """A method that determines if all the boxes can be opened.
-
     Args:
-        boxes (list[int]): A list of integers representing the numbers on the boxes.
-
-    Returns:
-        bool: True if all boxes can be opened, False otherwise.
+        boxes (list[int]) A list  of integers representing the numbers on the boxes.
+    Return:
+        True or False
     """
     if not boxes or not isinstance(boxes, list):
         return False
@@ -18,4 +16,6 @@ def can_unlock_all(boxes):
         for key in boxes[n]:
             if key not in unlocked and key < len(boxes):
                 unlocked.append(key)
-    return len(unlocked) == len(boxes)
+    if len(unlocked) == len(boxes):
+        return True
+    return False
