@@ -2,6 +2,7 @@
 """a method that determines if all the boxes can be opened."""
 
 
+
 def canUnlockAll(boxes):
     """A method that determines if all the boxes can be opened.
     Args:
