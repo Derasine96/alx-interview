@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""
-N queens
-"""
-
+"""N queens"""
 import sys
 
 if len(sys.argv) != 2:
